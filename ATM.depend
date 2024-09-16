@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1726498227 source:e:\codes\new_oop\atm\main.cpp
+	<iostream>
+	"ATM.h"
+
+1726509377 e:\codes\new_oop\atm\atm.h
+
+1726505387 source:e:\codes\new_oop\atm\atm.cpp
+	"ATM.h"
+	<iostream>
+
