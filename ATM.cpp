@@ -66,10 +66,13 @@ double ATM::Depost()
 double ATM::Withdraw()
 {
     double withdraw;
-    cout<<"your balance is "<<balance<<"$\n";
-    cout<<"How many withdraw money do you need ? "<<endl;
+    cout<<"your balance is "<<balance<<"$ .";
+
+
     do
     {
+        if(balance!=0){
+        cout<<"\nHow many withdraw money do you need ? "<<endl;
         cin>>withdraw;
         if(withdraw<=balance)
         {
@@ -82,8 +85,14 @@ double ATM::Withdraw()
             cout<<"wrong!\n   your balance less than withdraw .\nTry again:\n";
             check=false;
         }
+        }
+        else{
+             cout<<" ! you cannot withdraw money .\n";
+            check=true;
+        }
     }
     while(!check);
+
 
 }
 
